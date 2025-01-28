@@ -1,5 +1,7 @@
 # LinkedIn Email Script
-clone this directory
+
+
+Clone this directory
 ```bash
 git clone https://www.github.com/zoecyber001/linkedin-scraper
 cd linkedin-scrapper
