@@ -13,17 +13,25 @@ Download the Zipped file
 
 ## Setup Instructions
 Create an Account on : https://console.apify.com
-1. **Create a Virtual Environment**:
+Go to Actors and search "Linkedin email", click on the second option there, the on will a penguin. Click on it, click Run and begin trial. 
+
+
+1. **Install Dependencies**:
+   ```bash
+   pip install apify-client 
+   ```
+
+If it returns an error, run:
+```bash
+pip install apify-client --break-system-packages
+```
+Worst case scenario that also doesn't work, then the sure way to do it is to run it in a virtual environment :
    ```bash
    pip3 install --user virtualenv
    python3 -m venv linkedin_env
    source linkedin_env/bin/activate
    ```
-
-2. **Install Dependencies**:
-   ```bash
-   pip install apify-client
-   ```
+After this then you run the pip3 install apify-client again. 
 
 ## Running the Script
 
@@ -37,7 +45,7 @@ Create an Account on : https://console.apify.com
 ## Extracting Emails
 
 1. After the script has finished running, export the data from the Apify dashboard.
-2. Download the JSON file containing the extracted data.
+2. Download the JSON file containing the extracted data, and save it in the linkedin-scraper folder. 
 3. Run the JSON reader to extract all the emails:
    ```bash
    python3 json-reader.py 
